@@ -1,6 +1,6 @@
 {
   "name": "nuxt-vuex-router-sync",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "vuex-router-sync integration for Nuxt",
   "license": "MIT",
   "contributors": [
