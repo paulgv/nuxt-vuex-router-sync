@@ -1,0 +1,42 @@
+{
+  "name": "nuxt-vuex-router-sync",
+  "version": "0.0.0",
+  "description": "vuex-router-sync integration for Nuxt",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Paul Gascou-Vaillancourt (@paulgv)"
+    }
+  ],
+  "main": "lib/module.js",
+  "repository": "https://github.com/paulgv/nuxt-vuex-router-sync",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "npm run lint && jest",
+    "release": "standard-version && git push --follow-tags && npm publish"
+  },
+  "eslintIgnore": [
+    "lib/templates/*.*"
+  ],
+  "files": [
+    "lib"
+  ],
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "lib",
+      "test"
+    ]
+  },
+  "dependencies": {
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "nuxt-module-builder": "latest"
+  }
+}
