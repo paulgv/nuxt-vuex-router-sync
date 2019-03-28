@@ -23,6 +23,11 @@ jobs:
           paths:
             - "node_modules"
 
+      # Lint
+      - run:
+          name: Lint
+          command: yarn lint
+
       # Test
       - run:
           name: Tests
